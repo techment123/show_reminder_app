@@ -1,0 +1,21 @@
+<h1>Show Details</h1>
+
+<div>
+  <strong>Show Name is:</strong> <%= @show.title %>
+</div>
+
+<div>
+  <strong>Favorite:</strong> <%= @show.favorite %>
+</div>
+
+<div>
+  <strong>Show Associated With:</strong> <%= @show.channel.title %>
+</div>
+<br/>
+<br/>
+
+<div>
+  <%= link_to 'See All shows', shows_path %><br/>
+  <%= link_to 'Add New Show', new_show_path %><br/>
+  <%= link_to 'Back to home page', welcome_index_path %>
+</div>

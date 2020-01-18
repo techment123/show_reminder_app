@@ -1,0 +1,14 @@
+<h1>All Channels: </h1>
+
+<% @channels.each do |channel| %>
+  <div>
+    <strong>Channel Name is: </strong>
+    <%= channel.title %> <strong>Favorite:</strong> <%= channel.favorite %>
+  </div>
+<% end %>
+<br/>
+<br/>
+<div>
+  <%= link_to 'Add New Channel', new_channel_path %><br/>
+  <%= link_to 'Back to home page', welcome_index_path %>
+</div>

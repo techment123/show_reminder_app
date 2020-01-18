@@ -1,0 +1,15 @@
+<h1>Show Channel Details</h1>
+
+<div>
+  <strong>Channel Name is:</strong> <%= @channel.title %>
+</div>
+
+<div>
+  <strong>Favorite:</strong> <%= @channel.favorite %>
+</div>
+
+<div>
+  <%= link_to 'See All channel', channels_path %>
+  <%= link_to 'Add New Channel', new_channel_path %>
+  <%= link_to 'Back to home page', welcome_index_path %>
+</div>
